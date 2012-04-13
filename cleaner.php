@@ -37,8 +37,8 @@
 //TODO: change these settings to match a virus you need to clean
 
 // Virus body start and end regular expressions
-$virusBodyStart = preg_quote('=3-1;i=c-2;if(window.document)if(parseInt');
-$virusBodyEnd   = preg_quote('if(f)z=s;e(z);');
+$virusBodyStart = preg_quote('=3-1;i=c-2;if(window.document)if(parseInt', '/');
+$virusBodyEnd   = preg_quote('if(f)z=s;e(z);', '/');
 $virusBodyRegEx = "/$virusBodyStart.+?$virusBodyEnd/is";
 
 //Which file types we need to process
